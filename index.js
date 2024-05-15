@@ -6,6 +6,7 @@ const { dbConnection } = require('./config/config');
 app.use(express.json());
 
 app.use('/tasks', require("./routes/tasks"));
+app.use('/users', require("./routes/users"));
 
 dbConnection();
 
