@@ -4,7 +4,7 @@ const { authentication } = require("../middleware/authentication");
 const router = express.Router();
 
 //CREATE task
-router.post("/create",authentication, TaskController.create);
+router.post("/",authentication, TaskController.create);
 
 //GET tasks
 
